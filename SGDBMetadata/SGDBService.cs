@@ -140,9 +140,8 @@ namespace SGDBMetadata
             }
 
             logger.Debug($"getSGDBGames: {searchName}");
-            var escapedName = Uri.EscapeDataString(searchName.Trim());
             var request = new RestRequest("search/autocomplete/{searchName}", Method.GET);
-            request.AddUrlSegment("searchName", escapedName);
+            request.AddUrlSegment("searchName", searchName.Trim());
             return Execute<ResponseModel<SearchModel>>(request) ?? new ResponseModel<SearchModel>();
         }
 

@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Fork version**: Bumped the add-on version above the upstream `1.2` release so Playnite no longer offers to replace this fork with the normal SteamGridDB Metadata Provider. The add-on ID remains unchanged for compatibility with existing settings.
 
+### Fixed
+- **Game title search**: Removed double URL encoding that could break searches containing spaces or punctuation.
+- **Settings cancellation**: Cancelling settings now restores the live API client configuration instead of only reverting the settings UI.
+- **Release metadata**: Corrected the `1.0.1` installer package URL and fixed malformed release-note formatting and repository links.
+
 ## [1.0.1] - 2026-10-18
 
 ### Added

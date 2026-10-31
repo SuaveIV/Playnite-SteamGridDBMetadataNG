@@ -81,6 +81,7 @@ namespace SGDBMetadata
         public void CancelEdit()
         {
             Settings = editingClone;
+            plugin.UpdateSettings(Settings);
         }
 
         public void EndEdit()

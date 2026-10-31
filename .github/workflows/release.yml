@@ -113,10 +113,10 @@ jobs:
           $notes = "Release $tag of SteamGridDB Metadata Provider NG."
         }
 
-        $notes += "`r`n`r`n---`r`n### 🛡️ Package Integrity`r`n"
-        $notes += "- **File:** `$pextName``r`n"
-        $notes += "- **SHA-256:** ``$hash```r`n"
-        $notes += "`r`n---`r`n📋 **Full Changelog:** https://github.com/gOOvER/Playnite-SteamGridDBMetadataNG/blob/master/CHANGELOG.md"
+        $notes += "`r`n`r`n---`r`n### Package Integrity`r`n"
+        $notes += "- **File:** $pextName`r`n"
+        $notes += "- **SHA-256:** $hash`r`n"
+        $notes += "`r`n---`r`n**Full Changelog:** https://github.com/${{ github.repository }}/blob/master/CHANGELOG.md"
 
         $notesPath = "SGDBMetadata/bin/RELEASE_NOTES.md"
         Set-Content -Path $notesPath -Value $notes -Encoding UTF8
