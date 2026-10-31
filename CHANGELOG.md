@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-10-30
+
+### Changed
+- **Fork version**: Bumped the add-on version above the upstream `1.2` release so Playnite no longer offers to replace this fork with the normal SteamGridDB Metadata Provider. The add-on ID remains unchanged for compatibility with existing settings.
+
 ## [1.0.1] - 2026-10-18
 
 ### Added
